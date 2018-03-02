@@ -1,15 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RestaurantSampleApplication
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
+            Restaurant obj = new Restaurant("Taco Bell", "123 Main Street", .15);
+
+            Console.WriteLine("{0}", obj.Name );
+            Console.WriteLine("{0}", obj.Address );
+
+            obj.GenerateReceipt();
         }
     }
 }
